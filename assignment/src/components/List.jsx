@@ -15,10 +15,10 @@ export default function NestedList() {
     <List
       sx={{
         width: "100%",
-        maxWidth: 370,
+        maxWidth: 352,
         bgcolor: "#2c2c3d",
-        marginLeft: "25px",
-        height: 360,
+        marginLeft: "27px",
+        height: 351,
         borderRadius: "10px",
         color: "#ffffff",
         display: "flex",

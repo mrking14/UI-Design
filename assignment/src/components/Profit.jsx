@@ -33,8 +33,8 @@ export default function Profit() {
         marginTop: "10px",
         "& > :not(style)": {
           m: 1,
-          width: 370,
-          height: 208,
+          width: 350,
+          height: 190,
         },
       }}
     >

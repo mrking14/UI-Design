@@ -39,13 +39,14 @@ export default function ActivityChart() {
   return (
     <div
       style={{
-        maxWidth: 900,
+        maxWidth: 889,
         backgroundColor: "#2c2c3d",
-        marginLeft: "10px",
+        marginLeft: "14px",
         padding: "8px",
+        paddingBotton: "0px",
         borderRadius: "9px",
-         width: "67%",
-         marginTop:'10px'
+        width: "67%",
+        marginTop:'10px'
       }}
     >
       <Grid container >

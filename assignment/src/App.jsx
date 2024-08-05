@@ -15,6 +15,7 @@ import OrderTable from "./components/OrderTable";
 import Profit from "./components/Profit";
 import NestedList from "./components/List";
 import Feedback from "./components/Feedback";
+import { Typography } from "@mui/material";
 
 function App() {
   return (
@@ -22,10 +23,11 @@ function App() {
       <CssBaseline />
       <Grid container sx={{ backgroundColor: "black" }}>
         <Grid item xs="auto">
-          <SideBar />
+          <SideBar/>
         </Grid>
         <Grid item xs>
           <NavBar />
+          <Typography item sx={{color:"white", padding:"20px"}} variant="h6">Dashboard</Typography>
           <Grid container>
             <Cards
               item

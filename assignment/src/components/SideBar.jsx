@@ -17,14 +17,14 @@ import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 function SideBar() {
  
   return (
-    <AppBar position="static"  sx={{ backgroundColor: theme.palette.custom.main , width:'80px' }}>
+    <AppBar position="static"  sx={{ backgroundColor: theme.palette.custom.main , width:'80px', height: '100vh' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters sx={{display:'flex', flexDirection:'column', justifyContent: 'space-between', height: '100vh', pt: 2, pb: 2  }}>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex'},flexDirection: 'column' }}>
           <IconButton sx={{color: '#3f51b5'}}>
               <PixIcon/>
             </IconButton>
-            <IconButton sx={{ color: '#3f51b5'}}>
+            <IconButton sx={{ color: '#3f51b5' }}>
               <HomeIcon/>
             </IconButton>
             <IconButton sx={{ color: 'white'}}>
