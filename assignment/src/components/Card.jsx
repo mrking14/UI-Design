@@ -25,7 +25,8 @@ export default function Cards({ symbol, text, number, percentage }) {
         margin: 1,
         backgroundColor: theme.palette.custom.main,
         padding: 2,
-        width: "20%"
+        width: "20%",
+        marginTop: 2
       }}
     >
       <IconButton>{symbol}</IconButton>

@@ -8,7 +8,8 @@ import {
   Paper,
   Box,
   Avatar,
-  Typography
+  Typography,
+  Button
 } from "@mui/material";
 
 import React from "react";
@@ -60,13 +61,13 @@ const OrderTable = () => {
   ];
 
   const statusStyles = {
-    Delivered: { color: "green" },
-    Cancelled: { color: "red" },
-    Pending: { color: "orange" },
+    Delivered: { backgroundColor: 'rgba(76, 175, 80, 0.1)', color: 'green' },
+    Cancelled: { backgroundColor: 'rgba(244, 67, 54, 0.1)', color: 'red' },
+    Pending: { backgroundColor: 'rgba(255, 152, 0, 0.1)', color: 'orange' },
   };
 
   return (
-    <TableContainer component={Paper}  style={{  backgroundColor: "#2c2c3d", color: 'white', maxWidth:'860px', margin:'2px' }}>
+    <TableContainer component={Paper}  style={{  backgroundColor: "#2c2c3d", color: 'white', maxWidth:'860px', margin:'2px', marginTop:'17px', marginLeft:'5px' , borderRadius:'10px'}}>
       <Table aria-label="simple table">
         <TableHead>
           <TableRow>
@@ -88,9 +89,9 @@ const OrderTable = () => {
               <TableCell style={{color:'white'}}>{order.orderNo}</TableCell>
               <TableCell style={{color:'white'}}>{order.amount}</TableCell>
               <TableCell>
-                <Typography style={statusStyles[order.status]}>
+                <Button style={{...statusStyles[order.status], textTransform: 'none', borderRadius:'16px'}}>
                   {order.status}
-                </Typography>
+                </Button>
               </TableCell>
             </TableRow>
           ))}

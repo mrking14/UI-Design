@@ -10,14 +10,17 @@ import AddShoppingCartRoundedIcon from "@mui/icons-material/AddShoppingCartRound
 import AssignmentTurnedInRoundedIcon from "@mui/icons-material/AssignmentTurnedInRounded";
 import DisabledByDefaultRoundedIcon from "@mui/icons-material/DisabledByDefaultRounded";
 import MonetizationOnRoundedIcon from "@mui/icons-material/MonetizationOnRounded";
-import ActivityChart  from "./components/ActivityChart";
+import ActivityChart from "./components/ActivityChart";
 import OrderTable from "./components/OrderTable";
+import Profit from "./components/Profit";
+import NestedList from "./components/List";
+import Feedback from "./components/Feedback";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Grid container>
+      <Grid container sx={{ backgroundColor: "black" }}>
         <Grid item xs="auto">
           <SideBar />
         </Grid>
@@ -60,9 +63,22 @@ function App() {
               number="$12k"
               percentage={-3}
             />
+            <Grid item xs>
+              <Profit />
+            </Grid>
           </Grid>
-          <ActivityChart/>
-          <OrderTable/>
+          <Grid container>
+            <ActivityChart item xs />
+            <Grid item xs>
+              <NestedList />
+            </Grid>
+          </Grid>
+          <Grid container>
+            <OrderTable item xs />
+            <Grid item xs>
+              <Feedback />
+            </Grid>
+          </Grid>
         </Grid>
       </Grid>
     </ThemeProvider>

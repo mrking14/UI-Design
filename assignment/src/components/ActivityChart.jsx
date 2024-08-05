@@ -42,9 +42,10 @@ export default function ActivityChart() {
         maxWidth: 900,
         backgroundColor: "#2c2c3d",
         marginLeft: "10px",
-        padding: "10px",
+        padding: "8px",
         borderRadius: "9px",
-         width: "67%"
+         width: "67%",
+         marginTop:'10px'
       }}
     >
       <Grid container >
